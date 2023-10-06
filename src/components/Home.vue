@@ -1,5 +1,5 @@
 <template>
-    <div class="pt-12 md:px-18 justify-self-center w-full">
+    <div class="pt-12 md:px-18 justify-self-center w-full md:max-w-4xl">
         <h1 class="font-bold text-blue-500 dark:text-blue-300 text-6xl">TaskGlow</h1>
         <transition v-if="incompleteTaskCount > 0" name="fade">
             <h4 class="mt-4" >You have got 
@@ -79,18 +79,7 @@ export default {
                 due_date: '',
                 completed: false
             },
-            tasks: [
-                {
-                    title: '1',
-                    due_date: '11 September 2009',
-                    completed: false
-                },
-                {
-                    title: '2',
-                    due_date: '11 September 2009',
-                    completed: false
-                }
-            ],
+            tasks: [],
         };
     },
     computed: {
@@ -108,7 +97,7 @@ export default {
         addTask() {
             if (this.newTask.title && this.newTask.due_date) {
                 this.tasks.push(this.newTask)
-                this.newTask = this.initialTask
+                this.newTask = JSON.parse(JSON.stringify(this.initialTask))
             }
         }
     }

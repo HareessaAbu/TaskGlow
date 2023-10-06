@@ -17,9 +17,7 @@
 
 @media (min-width: 1024px) {
   body {
-    /* padding: 0 16; */
     display: flex;
-    /* display: flex; */
   }
 
   /* #app {
@@ -55,4 +53,12 @@ input {
 .slide-fade-leave-to {
   transform: translateX(20px);
   opacity: 0;
+}
+
+.task-title{
+  @apply font-medium break-words text-ellipsis overflow-hidden !important;
+}
+
+.item-property{
+  @apply overflow-hidden;
 }
