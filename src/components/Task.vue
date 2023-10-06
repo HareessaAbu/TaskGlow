@@ -32,7 +32,6 @@ export default {
     data(){
         return {
             newTask: {
-                index: this.index,
                 title: this.task.title,
                 due_date: this.task.due_date,
                 completed: this.task.completed
@@ -42,7 +41,10 @@ export default {
     },
     watch: {
         'newTask.completed': function(){
-            this.$emit('toggle-complete', this.newTask)
+            this.$emit('toggle-complete', {
+                'index': this.index,
+                'completed' : this.newTask.completed
+            })
         }
     },
     methods: {

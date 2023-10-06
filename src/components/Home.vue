@@ -80,171 +80,22 @@ export default {
                 completed: false
             },
             tasks: [
-                // {
-                //     title:'One',
-                //     due_date:'11 September 2023',
-                //     completed: false
-                // },
-                // {
-                //     title:'Two',
-                //     due_date:'11 September 2023',
-                //     completed: true
-                // },
-                // {
-                //     title:'Three',
-                //     due_date:'11 September 2023',
-                //     completed: false
-                // },
-                // {
-                //     title:'Four',
-                //     due_date:'11 September 2023',
-                //     completed: true
-                // },
-                // {
-                //     title:'Five',
-                //     due_date:'11 September 2023',
-                //     completed: false
-                // },
-                // {
-                //     title:'Six',
-                //     due_date:'11 September 2023',
-                //     completed: true
-                // },
-                // {
-                //     title:'Seven',
-                //     due_date:'11 September 2023',
-                //     completed: false
-                // },
-                // {
-                //     title:'Eight',
-                //     due_date:'11 September 2023',
-                //     completed: true
-                // },
-                // {
-                //     title:'Nine',
-                //     due_date:'11 September 2023',
-                //     completed: false
-                // },
-                // {
-                //     title:'Ten',
-                //     due_date:'11 September 2023',
-                //     completed: true
-                // },
-                // {
-                //     title:'Eleven',
-                //     due_date:'11 September 2023',
-                //     completed: false
-                // },
-                // {
-                //     title:'Twelve',
-                //     due_date:'11 September 2023',
-                //     completed: true
-                // },
-                // {
-                //     title:'Thirteen',
-                //     due_date:'11 September 2023',
-                //     completed: false
-                // },
-                // {
-                //     title:'Forteen',
-                //     due_date:'11 September 2023',
-                //     completed: true
-                // },
-                // {
-                //     title:'Fifteen',
-                //     due_date:'11 September 2023',
-                //     completed: false
-                // },
-                // {
-                //     title:'Sixteen',
-                //     due_date:'11 September 2023',
-                //     completed: true
-                // },
-                // {
-                //     title:'One',
-                //     due_date:'11 September 2023',
-                //     completed: false
-                // },
-                // {
-                //     title:'Two',
-                //     due_date:'11 September 2023',
-                //     completed: true
-                // },
-                // {
-                //     title:'Three',
-                //     due_date:'11 September 2023',
-                //     completed: false
-                // },
-                // {
-                //     title:'Four',
-                //     due_date:'11 September 2023',
-                //     completed: true
-                // },
-                // {
-                //     title:'Five',
-                //     due_date:'11 September 2023',
-                //     completed: false
-                // },
-                // {
-                //     title:'Six',
-                //     due_date:'11 September 2023',
-                //     completed: true
-                // },
-                // {
-                //     title:'Seven',
-                //     due_date:'11 September 2023',
-                //     completed: false
-                // },
-                // {
-                //     title:'Eight',
-                //     due_date:'11 September 2023',
-                //     completed: true
-                // },
-                // {
-                //     title:'Nine',
-                //     due_date:'11 September 2023',
-                //     completed: false
-                // },
-                // {
-                //     title:'Ten',
-                //     due_date:'11 September 2023',
-                //     completed: true
-                // },
-                // {
-                //     title:'Eleven',
-                //     due_date:'11 September 2023',
-                //     completed: false
-                // },
-                // {
-                //     title:'Twelve',
-                //     due_date:'11 September 2023',
-                //     completed: true
-                // },
-                // {
-                //     title:'Thirteen',
-                //     due_date:'11 September 2023',
-                //     completed: false
-                // },
-                // {
-                //     title:'Forteen',
-                //     due_date:'11 September 2023',
-                //     completed: true
-                // },
-                // {
-                //     title:'Fifteen',
-                //     due_date:'11 September 2023',
-                //     completed: false
-                // },
-                // {
-                //     title:'Sixteen',
-                //     due_date:'11 September 2023',
-                //     completed: true
-                // }
+                {
+                    title: '1',
+                    due_date: '11 September 2009',
+                    completed: false
+                },
+                {
+                    title: '2',
+                    due_date: '11 September 2009',
+                    completed: false
+                }
             ],
         };
     },
     computed: {
         incompleteTaskCount() {
+
             return this.tasks.filter(function(task){
                 return task.completed == false
             }).length

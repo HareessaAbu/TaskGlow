@@ -59,9 +59,9 @@ export default {
         changePage(value){
             this.pageNum = value
         },
-        toggleComplete(newTask){
+        toggleComplete(value){
             const reversedTasks = this.newTasks.slice().reverse()
-            reversedTasks[newTask.index].completed = newTask.completed
+            reversedTasks[value.index].completed = value.completed
             this.newTasks = reversedTasks.slice().reverse()
             this.$emit('update-tasks', this.newTasks)
         }
