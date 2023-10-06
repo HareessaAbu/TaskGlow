@@ -1,0 +1,58 @@
+@import './base.css';
+@import './pagination.scss';
+
+#app {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+
+  font-weight: normal;
+}
+
+.underline {
+  border-bottom: 1px solid currentColor;
+  display: inline-block;
+  line-height: 0.85;
+}
+
+@media (min-width: 1024px) {
+  body {
+    /* padding: 0 16; */
+    display: flex;
+    /* display: flex; */
+  }
+
+  /* #app {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 2rem;
+  } */
+}
+
+label,input{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+input {
+  @apply rounded bg-blue-50 !important;
+
+  height: 40px;
+  padding: 6px 12px;
+  color: black;
+  border: 1px solid gainsboro !important;
+}
+
+.slide-fade-enter-active {
+  transition: all 0.3s ease-out;
+}
+
+.slide-fade-leave-active {
+  transition: all 0.8s cubic-bezier(1, 0.5, 0.8, 1);
+}
+
+.slide-fade-enter-from,
+.slide-fade-leave-to {
+  transform: translateX(20px);
+  opacity: 0;
+}

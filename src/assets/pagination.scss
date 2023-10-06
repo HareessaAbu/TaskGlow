@@ -1,0 +1,25 @@
+.pagination {
+    @apply text-black py-5 text-center ;
+    list-style-type: none;
+
+    button {
+        @apply px-2 mx-2  rounded hover:bg-blue-200 md:mx-4;
+    }
+
+    .btn-control {
+        @apply bg-blue-100 text-blue-800 text-base disabled:bg-gray-300 disabled:text-white;
+    }
+
+    .active {
+        @apply bg-blue-500 text-white hover:text-black;
+    }
+
+    .ellipsis {
+        @apply text-gray-400;
+    }
+}
+  
+.pagination-item {
+    display: inline-block;
+}
+
