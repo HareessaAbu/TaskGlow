@@ -54,6 +54,11 @@ export default {
             const reversedTasks = this.newTasks.slice().reverse()
             reversedTasks.splice(index, 1);
             this.newTasks = reversedTasks.slice().reverse()
+
+            if(this.paginatedTasks.length < 1 && this.pageNum > 1){
+                this.pageNum--
+            }
+
             this.$emit('update-tasks', this.newTasks)
         },
         changePage(value){
