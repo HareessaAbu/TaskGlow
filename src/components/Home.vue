@@ -4,7 +4,7 @@
         <transition v-if="incompleteTaskCount > 0" name="fade">
             <h4 class="mt-4" >You have got 
                 <strong class="text-blue-500 dark:text-blue-300 underline"> {{ incompleteTaskCount }} </strong> 
-                {{ ((incompleteTaskCount < 2) ? ' task':' tasks') }} today. Time to shine!
+                {{ ((incompleteTaskCount < 2) ? ' task':' tasks') }} today. <span class="text-blue-500 dark:text-blue-300 font-semibold">Time to shine!</span>
             </h4>
         </transition>
     
@@ -13,7 +13,7 @@
                 <h3 class="mt-2">Take a breather if you'd like.<br></h3>
             </transition>
             <transition>
-                <small>Or, Add some tasks — Let's get productive and tackle them all.</small>
+                <small>Or, Add some tasks — Let's get <span class="text-blue-500 dark:text-blue-300 font-semibold">productive</span> and tackle them all.</small>
             </transition>
         </span>
 
