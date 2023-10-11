@@ -35,7 +35,6 @@ export default {
                 title: this.task.title,
                 due_date: this.task.due_date,
                 completed: this.task.completed
-                
             }
         }
     },

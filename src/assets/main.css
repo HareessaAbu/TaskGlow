@@ -1,5 +1,6 @@
 @import './base.css';
 @import './pagination.scss';
+@import './buttons.scss';
 
 #app {
   max-width: 1280px;

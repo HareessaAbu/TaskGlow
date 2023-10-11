@@ -54,18 +54,21 @@
             @update-tasks="updateTasks" 
             />
         </transition>
+
+        <PomodoroSection/>
         
     </div>
 </template>
 
 <script>
-import VueDatePicker from '@vuepic/vue-datepicker';
+import VueDatePicker from '@vuepic/vue-datepicker'
 import '@vuepic/vue-datepicker/dist/main.css'
 import TaskList from './TaskList.vue'
+import PomodoroSection from './PomodoroSection.vue'
 
 export default {
     name:'Home',
-    components: { VueDatePicker, TaskList },
+    components: { VueDatePicker, TaskList, PomodoroSection },
     data() {
         return {
             dateFormat: 'dd MMMM yyyy',
